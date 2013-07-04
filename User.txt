@@ -1,0 +1,9 @@
+.android
+.gradle
+AndroidStudioProjects
+android-workspace
+ccs_workspace_v5_3
+Desktop
+Dropbox
+eclipse-cdt-workspace
+Google Drive

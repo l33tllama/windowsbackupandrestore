@@ -1,0 +1,10 @@
+adt-bundle-windows-x86_64-20130522
+Android-NDK
+Console2
+Cygwin
+eclipse
+eclipse-cdt
+GOG Games
+MinGW
+Python33
+ti
