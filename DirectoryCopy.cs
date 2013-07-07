@@ -40,7 +40,12 @@ namespace ReformatBackup
 							Console.WriteLine (ex.Message);
 						}
 					} else {
-						Console.WriteLine ("Skipping {0}, file already exists.", file.Name);
+						FileInfo destFile = new FileInfo(destDir);
+						if(destFile.LastWriteTime < file.LastWriteTime){
+							Console.WriteLine("File has been modified since last copy. Now coying new file: {0} ", file.Name);
+						} else {
+							Console.WriteLine ("Skipping {0}, file already exists, and is not newer.", file.Name);
+						}
 					}
 
 				}
